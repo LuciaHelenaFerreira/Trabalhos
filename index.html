@@ -1,30 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Cubo Magico</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="scoreboard">
-                <p>Movimentos: <span id="movements">0</span></p>
-                <p>Lados Completos: <span id="fullSides">0 / 6</span></p>
-                
-            </div>
-            <button id="rotate_up" class="rotate_cube"><i
-                    class="fas fa-arrow-up"></i></button>
-            <button id="rotate_down" class="rotate_cube"><i
-                    class="fas fa-arrow-down"></i></button>
-            <button id="rotate_left" class="rotate_cube"><i
-                    class="fas fa-arrow-left"></i></button>
-            <button id="rotate_right" class="rotate_cube"><i
-                    class="fas fa-arrow-right"></i></button>
-            <div class="box"></div>
-        </div>
-        <script src="js/scripts.js"></script>
-    </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutastic Memória</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Ranking</h2>
+    <ol id="leaderboard" class="leaderboard"></ol>
+    <div id="player-input">
+        <input type="text" id="player-name" placeholder="Digite seu nome">
+        <button id="begin-game" class="begin-button">Iniciar Jogo</button>
+    </div>
+    <div id="game-status">
+        <br>
+        <div id="elapsed-time" class="elapsed-time">Tempo: 0s</div>
+    </div>
+    <div id="feedback"></div>
+    <div id="memory-game-container"></div>
+    <br>
+    <button id="restart-game" class="restart-button">Reiniciar Jogo</button>
+    <h1>Frutastic Memória</h1>
+    <script src="script.js"></script>
+</body>
 </html>
